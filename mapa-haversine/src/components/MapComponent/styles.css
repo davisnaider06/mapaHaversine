@@ -1,0 +1,100 @@
+.map-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.info-panel {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    width: 300px; /* Fixed width for better layout */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.info-panel h3 {
+    margin-top: 0;
+}
+
+.coord-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+}
+
+.input-group input, .speed-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.speed-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.speed-group label {
+    white-space: nowrap;
+}
+
+.calculate-button {
+    padding: 10px;
+    border: none;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.calculate-button:hover {
+    background-color: #45a049;
+}
+
+.result-display {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+}
+
+.result-display p {
+    margin: 5px 0;
+}
+
+.reset-button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #f44336; /* Red */
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.reset-button:hover {
+    background-color: #d32f2f;
+}
+
+.leaflet-container {
+    height: 100%;
+    width: 100%;
+}
