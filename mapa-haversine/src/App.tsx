@@ -1,6 +1,5 @@
 import React from 'react';
-import { MapComponent } from './MapComponent'; // Vamos criar este arquivo agora
-import './App.css';
+import { MapComponent } from './MapComponent'; 
 
 function App() {
   return (
