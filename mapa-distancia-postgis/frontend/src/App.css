@@ -1,0 +1,133 @@
+/* frontend/src/App.css */
+.App {
+  max-width: 1300px; /* Increased max-width further */
+  margin: 30px auto; /* Increased top/bottom margin */
+  padding: 30px; /* Increased padding */
+  background-color: #ffffff;
+  border-radius: 10px; /* Slightly larger radius */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* Softer shadow */
+  text-align: center;
+}
+
+h1 {
+  color: #2c3e50;
+  margin-bottom: 15px; /* Increased margin */
+  font-size: 2.5rem; /* ~45px based on 18px root */
+  font-weight: 700;
+}
+
+.instructions {
+  margin-bottom: 25px; /* Increased margin */
+  color: #555;
+  font-size: 1.25rem; /* ~22.5px */
+}
+
+.controls-container {
+  margin: 25px 0; /* Increased margin */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px; /* Increased gap */
+}
+
+.speed-selector {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* Increased gap */
+}
+
+.speed-selector label {
+  margin-right: 8px; /* Increased margin */
+  font-weight: 500;
+  font-size: 1.15rem; /* ~20.7px */
+  color: #34495e;
+}
+
+.action-buttons button {
+  background-color: #e74c3c; /* Red */
+  color: white;
+}
+.action-buttons button:hover:not(:disabled) {
+  background-color: #c0392b; /* Darker red */
+}
+
+.loading,
+.error {
+  margin-top: 25px; /* Increased margin */
+  padding: 18px; /* Increased padding */
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 1.1rem; /* ~19.8px */
+}
+
+.loading {
+  background-color: #e0f7fa; /* Lighter cyan */
+  color: #00796b; /* Darker cyan/teal */
+  border: 1px solid #b2ebf2;
+}
+
+.error {
+  background-color: #ffebee; /* Lighter red */
+  color: #c62828; /* Darker red */
+  border: 1px solid #ffcdd2;
+}
+
+.results-container {
+  margin-top: 40px; /* Increased margin */
+  padding-top: 25px; /* Increased padding */
+  border-top: 1px solid #e0e0e0; /* Slightly darker border */
+}
+
+h2 {
+  font-size: 2rem; /* ~36px */
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Slightly larger min-width */
+  gap: 25px; /* Increased gap */
+  margin-top: 20px;
+}
+
+.result-card {
+  background-color: #f8f9f9; /* Lighter background */
+  padding: 25px; /* Increased padding */
+  border-radius: 8px; /* Slightly larger radius */
+  text-align: left;
+  border: 1px solid #e0e0e0;
+}
+
+.result-card h3 {
+  margin-top: 0;
+  color: #34495e;
+  border-bottom: 2px solid #bdc3c7;
+  padding-bottom: 8px; /* Increased padding */
+  margin-bottom: 18px; /* Increased margin */
+  font-size: 1.4rem; /* ~25.2px */
+  font-weight: 600;
+}
+
+.result-card p {
+  margin: 12px 0; /* Increased margin */
+  line-height: 1.6;
+  font-size: 1.1rem; /* ~19.8px */
+  color: #555;
+}
+
+.result-card strong {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.google-maps-button button {
+  background-color: #3498db; /* Blue */
+  color: white;
+  margin-top: 20px; /* Increased margin */
+}
+
+.google-maps-button button:hover:not(:disabled) {
+  background-color: #2980b9; /* Darker blue */
+}

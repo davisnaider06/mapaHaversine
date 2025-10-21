@@ -1,0 +1,72 @@
+/* frontend/src/index.css */
+
+html {
+  /* Define a fonte base como 18px (ou ajuste conforme preferir) */
+  font-size: 112.5%; /* 16px * 1.125 = 18px */
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f4f7f6; /* Lighter gray background */
+  color: #333;
+  line-height: 1.6; /* Improve readability */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+  background-color: #e9e9e9; /* Slight background for code */
+  padding: 0.1em 0.3em;
+  border-radius: 3px;
+}
+
+button {
+  cursor: pointer;
+  padding: 12px 20px; /* Increased padding */
+  border: none;
+  border-radius: 5px; /* Slightly more rounded */
+  font-size: 1rem; /* Base size is now 18px */
+  margin: 8px; /* Consistent margin */
+  transition: background-color 0.2s ease-in-out, transform 0.1s ease; /* Smoother transitions */
+  font-weight: 500;
+}
+
+button:hover:not(:disabled) {
+  opacity: 0.9;
+  transform: translateY(-1px); /* Slight lift on hover */
+}
+
+button:active:not(:disabled) {
+  transform: translateY(0px); /* Press down effect */
+}
+
+
+button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+input[type="number"],
+select {
+  padding: 12px 15px; /* Increased padding */
+  margin: 8px; /* Consistent margin */
+  border: 1px solid #ccc;
+  border-radius: 5px; /* Slightly more rounded */
+  font-size: 1rem; /* Base size is now 18px */
+  background-color: #fff;
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Improve focus states for accessibility */
+button:focus,
+input:focus,
+select:focus {
+  outline: 2px solid #3498db;
+  outline-offset: 2px;
+}
